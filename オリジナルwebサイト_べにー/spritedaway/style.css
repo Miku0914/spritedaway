@@ -1,0 +1,247 @@
+/* ===== Webサイト全体のスタイル ===== */
+/* html */
+html {
+  height: 100%;
+}
+
+/* body */
+body {
+  font-family: sans-serif;
+  height: 100%;
+  margin: 0;
+}
+
+/* h1見出し */
+h1 {
+  color: #ffffee;/* フォントの色 */
+  font-size: 80px;/* フォントの大きさ */
+  font-family: serif;/* フォントの種類 */
+  text-align: left;/* 文字・画像を中央にそろえる */
+  background-image: url(img/chihirologo.png);/* 背景画像 */
+  height: 150px;/* 高さ */
+  padding-top: 100px;/* 上がわの余白 */
+  background-repeat: no-repeat;/* 背景のくり返しをやめる */
+  background-position: top center;/* 背景の位置 */
+  float : left;
+  margin-left:5%;
+  margin-top:300px;
+  width:550px;
+  animation: zoom_in 2s ease-in-out forwards ;
+  transform: scale(0.4);
+  filter: drop-shadow(0 0 5px white);
+}
+
+/* ===== ヘッダーのスタイル ===== */
+/* ヘッダーの箱 */
+header {
+  background-image: url(img/chihiro036.jpeg);/* 背景画像 */
+  height: 600px;/* 高さ */
+  padding-top: 150px;/* 上がわの余白 */
+  background-size:cover;
+}
+
+
+/* ナビゲーションの箱 */
+nav {
+  background-color: #6FADA8;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+/* リスト全体 */
+nav ul {
+ margin-top: 10px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+/* １つ１つのリスト */
+nav li {
+  display: inline-block;
+  margin-right: 40px;
+}
+
+/* リンク */
+nav a {
+  color: #ffffff;
+  text-decoration: none;
+background-image: linear-gradient(to right, transparent 50%, #33ddcc 50%);
+  background-position: 0 0;
+  background-size: 200% auto;
+}
+
+/* リンクにふれた時 */
+nav a:hover {
+  
+  
+   background-position: -100% 0;
+   background-image: linear-gradient(to right, transparent 50%, #27425A 50%);
+transition: 0.3s;
+}
+
+
+
+/* ===== お店紹介のスタイル ===== */
+/* セクション */
+.shop {
+  background-color: #B3CFCD;/* 背景の色 */
+  color: #27425A;
+  padding: 30px;
+}
+
+/* h2見出し */
+.title {
+  font-size: 30px;
+  border-left-style: solid;
+  border-left-width: 10px;
+  padding-left: 15px;
+  margin-bottom: 50px;
+}
+
+/* 段落 */
+.shop p {
+  font-size: 20px;
+  background-color: #ffffff;
+  padding: 30px;
+  border-radius: 0px;
+  height: 300px;
+  margin-right:30px;
+}
+
+/* 画像 */
+.shop img {
+  float: right;/* 画像や箱の回り込み */
+}
+
+
+/* ===== パン紹介のスタイル ===== */
+/* セクション */
+.photo {
+  padding: 30px;
+  background-image: url(img/chihiro043.jpeg);
+  background-size:cover;
+}
+
+/* h2見出し */
+.photo h2 {
+  color: #ffffff;
+  border-color: #6FADA8;
+}
+
+/* h3見出し */
+.photo h3 {
+  color: #6FADA8;
+}
+
+/* 段落 */
+.photo p {
+  color: #ffffff;
+  clear: left;/* 画像や箱の回り込みをやめる */
+}
+
+/* 大きな箱 */
+.big {
+  background-color: #ffffff;
+  width: 500px;/* 横幅 */
+  padding: 15px;
+  margin: 20px;
+  box-shadow: 10px 10px 20px #000000;/* 影 */
+  float: left;
+  transform: rotate(-5deg);/* 回転させる */
+}
+
+/* 小さな箱 */
+.small {
+  background-color: #ffffff;
+  width: 240px;
+  padding: 15px;
+  margin: 20px;
+  box-shadow: 10px 10px 20px #000000;
+}
+
+/* 箱 */
+.box {
+  float: left;
+}
+
+
+/* ===== 値段表のスタイル ===== */
+/* セクション */
+.price {
+  padding: 30px;
+  background-color:#B3CFCD;
+}
+
+/* h2見出し */
+.price h2 {
+  color: #ffffff;
+  border-color: #6FADA8;
+}
+
+/* 表 */
+.price table {
+  background-color: #ffffff;
+  border-collapse: collapse;/* 表の隙間（すきま） */
+  width: 100%;
+}
+
+/* 表のセル */
+.price td {
+  border: 1px solid #000000;
+  padding: 10px;
+}
+
+/* 表の見出しセル */
+.price th {
+  border: 1px solid #000000;
+  padding: 10px;
+  background-color: #6FADA8;
+  text-align: left;
+}
+
+/* 表の見出しセル（季節） */
+.season th {
+  background-color: #6FADA8;
+}
+
+
+/* ===== アクセス情報のスタイル ===== */
+/* セクション */
+.access {
+  padding: 30px;
+  background-color: #ffffff;
+  height: 400px;
+  color: #6FADA8;
+}
+
+/* h3見出し */
+.access h3 {
+  font-size: 50px;
+  font-family: lobster;
+  margin-top: 0px;
+}
+
+/* リスト */
+.access ul {
+  list-style-type: none;/* リストのマーカー */
+  padding-left: 0px;
+}
+
+/* 箱 */
+.access div {
+  float: left;
+  width: 50%;
+}
+
+/* フッター */
+footer {
+  text-align: center;
+  background-color: #27425A;
+  color: #ffffff;
+}
+
+@keyframes zoom_in {
+  100% {
+    transform: scale(1);
+  }
+}
